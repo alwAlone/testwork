@@ -1,4 +1,5 @@
 .team {
+  max-width: 100%;
   margin-bottom: 185px;
   &__item {
     display: flex;
@@ -10,8 +11,8 @@
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
-      width: 870px;
-      max-width: 100%;
+      max-width: 870px;
+      width: 100%;
       margin-top: -15px;
     }
 

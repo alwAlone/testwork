@@ -41,10 +41,20 @@
   .testimonial__customer-say-quote {
     padding: 0 30px;
   }
+  .testimonial__customer-say-quote::before {
+    left: 15px;
+  }
+  .testimonial__customer-say-quote::after {
+    right: 15px;
+  }
 }
 @media (max-width: 550px) {
   .section__description {
     padding: 0;
+  }
+  .cove__description {
+    padding: 0 10px;
+    box-sizing: border-box;
   }
   .pricing__item-box {
     width: 70%;
@@ -97,6 +107,7 @@
   .cover__title {
     margin: 0 0 15px 0;
     text-align: center;
+    width: 100%;
   }
   .main {
     box-sizing: border-box;
