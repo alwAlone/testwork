@@ -13,7 +13,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 225px;
 }
 .section__title {
   width: 100%;
@@ -162,6 +161,9 @@ body {
   box-sizing: border-box;
 }
 
+.features {
+  margin-bottom: 146px;
+}
 .features__item {
   box-sizing: border-box;
   max-width: 320px;
@@ -257,7 +259,7 @@ body {
 }
 
 .portfolio {
-  margin-bottom: 260px;
+  margin-bottom: 197px;
 }
 .portfolio__item {
   box-sizing: border-box;
@@ -311,6 +313,9 @@ body {
   color: #898989;
 }
 
+.team {
+  margin-bottom: 185px;
+}
 .team__item {
   display: flex;
   flex-direction: column;
@@ -360,7 +365,7 @@ body {
 }
 
 .testimonial {
-  margin-top: -44px;
+  margin-bottom: 200px;
 }
 .testimonial__item {
   display: flex;
@@ -440,7 +445,7 @@ body {
 }
 
 .contact {
-  margin-top: -20px;
+  margin-bottom: 230px;
 }
 .contact__item {
   box-sizing: border-box;
@@ -449,7 +454,7 @@ body {
   align-items: center;
   width: 30%;
   max-width: 200px;
-  padding-top: 36px;
+  padding-top: 41px;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -459,7 +464,7 @@ body {
   justify-content: space-around;
   width: 100%;
   max-width: 730px;
-  margin: -30px 0 48px 0;
+  margin: -35px 0 48px 0;
 }
 .contact__item-type {
   font-size: 1.5em;
@@ -501,6 +506,9 @@ body {
   font-weight: bold;
 }
 
+.subscribe {
+  margin-bottom: 225px;
+}
 .subscribe__form {
   box-sizing: border-box;
   display: flex;
@@ -508,7 +516,7 @@ body {
   width: 100%;
   max-width: 800px;
   padding: 0 25px 0 35px;
-  margin-top: -50px;
+  margin-top: -40px;
 }
 .subscribe input {
   display: block;
@@ -530,7 +538,7 @@ body {
   display: flex;
   justify-content: center;
   min-width: 320px;
-  padding-top: 96px;
+  padding-top: 86px;
   margin-top: -150px;
   background-color: #000;
   color: #fff;
@@ -545,16 +553,17 @@ body {
   max-width: 960px;
 }
 .footer__address-box {
+  align-items: flex-start;
   width: 25%;
   max-width: 180px;
   padding-left: 28px;
   margin: -115px 0 305px 0;
 }
 .footer__link-box {
-  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
   width: 70%;
   max-width: 640px;
-  padding-right: 30px;
   margin: -115px 0 305px 0;
 }
 .footer__link-box-column {
