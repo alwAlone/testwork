@@ -5,29 +5,26 @@ body {
 }
 .section {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 225px;
 
   &__title {
-    font-size: 2em;
+    width: 100%;
     margin: 0;
     margin-bottom: .4em;
-    width: 100%;
+    font-size: 2em;
     text-align: center;
   }
 
   &__description {
     width: 100%;
-    margin: 0;
-    text-align: center;
-    padding: 0 110px;
     box-sizing: border-box;
-    font-size: 1.25em;
+    margin: 0;
     margin-bottom: 81.5px;
+    padding: 0 110px;
+    text-align: center;
+    font-size: 1.25em;
     color: $second-color;
-    @media (max-width: 400px) {
-      padding: 0 20px;
-    }
   }
 }

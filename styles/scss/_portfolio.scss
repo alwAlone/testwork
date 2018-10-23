@@ -1,59 +1,44 @@
 .portfolio {
   margin-bottom: 260px;
   &__item {
-    width: $column * 3;
-    padding: 0 10px;
     box-sizing: border-box;
-    text-align: center;
+    width: 240px;
+    padding: 0 10px;
     margin-bottom: 61px;
-    &:nth-of-type(n+4) {
-      margin-bottom: 0;
-    }
-    @media (max-width: 1140px) {
-      &:nth-of-type(n+4) {
-        margin-bottom: 61px;
-      }
-      &:nth-of-type(n+6) {
-        margin-bottom: 0;
-      }
-    }
+    text-align: center;
     &-box {
       display: flex;
       flex-flow: row wrap;
       margin-top: -17px;
-      @media (max-width: 1140px) {
-        justify-content: center;
-      }
     }
     &-info {
+      box-sizing: border-box;
       display: flex;
       justify-content: space-between;
-      color: #fff;
+      width: 100%;
+      padding: 0 10px;
       position: absolute;
       bottom: 16px;
-      padding: 0 10px;
-      width: 100%;
-      box-sizing: border-box;
+      color: #fff;
       font-size: .875em;
     }
     &-view-count {
+      padding-left: 26px;
       background-image: url(source/eye.png);
       background-repeat: no-repeat;
-      padding-left: 26px;
     }
     &-post-date {
+      padding-right: 30px;
       background-image: url(source/time.png);
       background-repeat: no-repeat;
       background-position: right center;
-      padding-right: 30px;
     }
   }
 
   &__image {
     &-box {
-      margin: 0;
+      margin: 0 0 15px 0;
       position: relative;
-      margin-bottom: 15px;
 
       img {
         display: block;
@@ -63,9 +48,9 @@
     }
   }
   &__title {
+    margin-bottom: 3px;
     font-size: 1.375em;
     font-weight: bold;
-    margin-bottom: 3px;
   }
   &__info {
     color: $second-color;
