@@ -105,6 +105,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 750px;
+  min-width: 320px;
   background-color: #fcdb00;
   background-image: url(source/arrow-bottom.svg);
   background-size: 13px;
@@ -445,7 +446,7 @@ body {
 }
 
 .contact {
-  margin-bottom: 230px;
+  margin-bottom: 80px;
 }
 .contact__item {
   box-sizing: border-box;
@@ -507,7 +508,7 @@ body {
 }
 
 .subscribe {
-  margin-bottom: 225px;
+  margin-bottom: 108px;
 }
 .subscribe__form {
   box-sizing: border-box;
@@ -539,7 +540,6 @@ body {
   justify-content: center;
   min-width: 320px;
   padding-top: 86px;
-  margin-top: -150px;
   background-color: #000;
   color: #fff;
 }
@@ -557,14 +557,16 @@ body {
   width: 25%;
   max-width: 180px;
   padding-left: 28px;
-  margin: -115px 0 305px 0;
+  margin: 0 0 305px 0;
 }
 .footer__link-box {
+  box-sizing: border-box;
   flex-flow: row wrap;
   align-items: flex-start;
   width: 70%;
   max-width: 640px;
-  margin: -115px 0 305px 0;
+  margin: 0 0 305px 0;
+  padding-left: 10px;
 }
 .footer__link-box-column {
   width: 80px;
@@ -641,6 +643,200 @@ body {
 
 .bg-phone {
   background-image: url(source/phone.png);
+}
+
+@media (max-width: 950px) {
+  .section {
+    margin-bottom: 70px;
+  }
+
+  .header__container {
+    padding: 0 20px 0 40px;
+  }
+
+  .header__top-menu {
+    padding-left: 0;
+  }
+
+  .header__social-connect {
+    padding-left: 0;
+  }
+
+  .cover {
+    height: 600px;
+  }
+
+  .features__item {
+    margin-bottom: 50px;
+  }
+
+  .portfolio__item-box {
+    justify-content: center;
+  }
+
+  .team__item-box {
+    max-width: 500px;
+  }
+}
+@media (max-width: 850px) {
+  .footer__link-box {
+    width: auto;
+  }
+
+  .footer__link-box-column {
+    margin: 0 10px 10px 0;
+  }
+}
+@media (max-width: 750px) {
+  .testimonial__customer-say-quote {
+    margin: 0;
+  }
+}
+@media (max-width: 650px) {
+  .testimonial__customer-say-quote {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 550px) {
+  .section__description {
+    padding: 0;
+  }
+
+  .pricing__item-box {
+    width: 70%;
+  }
+
+  .pricing__item {
+    margin-bottom: 80px;
+  }
+
+  .team__item-box {
+    justify-content: space-around;
+  }
+
+  .testimonial__customer-say-quote {
+    width: 380px;
+  }
+
+  .footer__container {
+    justify-content: center;
+  }
+
+  .footer__address-box {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+
+  .footer__address-box-address {
+    text-align: center;
+  }
+
+  .footer__link-box {
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 450px) {
+  .header {
+    padding-top: 20px;
+  }
+
+  .header__container {
+    flex-flow: column;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .header__top-menu {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .header__logo {
+    margin-bottom: 20px;
+  }
+
+  .header__social-connect {
+    width: auto;
+  }
+
+  .cover__title {
+    margin: 0 0 15px 0;
+    text-align: center;
+  }
+
+  .main {
+    box-sizing: border-box;
+    padding: 109px 20px 0;
+  }
+
+  .team__item-box {
+    width: auto;
+  }
+
+  .testimonial__customer-say-quote {
+    width: 260px;
+  }
+
+  .contact__item-box {
+    flex-flow: row wrap;
+  }
+
+  .contact__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    box-sizing: border-box;
+    padding: 86px 20px 0;
+  }
+
+  .subscribe__form {
+    padding: 0;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .subscribe input {
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+
+  .subscribe button {
+    width: 100%;
+  }
+
+  .footer__link-box-column a {
+    text-align: center;
+  }
+}
+@media (max-width: 380px) {
+  .header__container {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .features__item {
+    padding-left: 70px;
+    background-position: 12px 1px;
+  }
+
+  .testimonial__item-box {
+    flex-flow: row wrap;
+  }
+
+  .testimonial__customer-say-quote {
+    width: 190px;
+    padding: 0 10px;
+    font-size: 0.8em;
+  }
+
+  .footer__link-box {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

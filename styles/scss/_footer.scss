@@ -3,7 +3,6 @@
   justify-content: center;
   min-width: 320px;
   padding-top: 86px;
-  margin-top: -150px;
   background-color: #000;
   color: #fff; 
 
@@ -22,16 +21,18 @@
       width: 25%;
       max-width: 180px;
       padding-left: 28px;
-      margin: -115px 0 305px 0;
+      margin: 0 0 305px 0;
     }
   }
   &__link {
     &-box {
+      box-sizing: border-box;
       flex-flow: row wrap;
       align-items: flex-start;
       width: 70%;
       max-width: 640px;
-      margin: -115px 0 305px 0;
+      margin: 0 0 305px 0;
+      padding-left: 10px;
       &-column {
         width: 80px;
         margin-right: 80px;
