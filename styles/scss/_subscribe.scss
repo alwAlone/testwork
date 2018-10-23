@@ -1,0 +1,38 @@
+.subscribe {
+  &__form {
+    margin-top: -50px;
+    max-width: $column * 10;
+    width: 100%;
+    padding: 0 25px 0 35px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    @media (max-width: 400px) {
+      padding: 0;
+      flex-flow: row wrap;
+    }
+  }
+  input {
+    width: 80%;
+    display: block;
+    padding: 15px;
+    margin-right: 5px;
+    @media (max-width: 400px) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  }
+  button {
+    width: 19%;
+    display: block;
+    padding: 15px 0;
+    background-color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    @media (max-width: 400px) {
+      width: 100%;
+    }
+  }
+}

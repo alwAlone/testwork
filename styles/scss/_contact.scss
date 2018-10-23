@@ -1,0 +1,63 @@
+.contact {
+  margin-top: -20px;
+  &__item {
+    max-width: $column * 2.5;
+    width: 30%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-box {
+      max-width: 730px;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 48px;
+      margin-top: -30px;
+    }
+    &-type {
+      font-size: 1.5em;
+      font-weight: 500;
+      line-height: 1;
+    }
+    &-value {
+      width: 90%;
+      font-size: .875em;
+      color: $second-color;
+      line-height: 1.1;
+      text-align: center;
+    }
+  }
+  &__form {
+    max-width: $column * 6;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    input, textarea {
+      border: 2px solid;
+      width: 100%;
+      padding: 17px;
+      box-sizing: border-box;
+      margin-bottom: 28px;
+    }
+    textarea {
+      margin-top: -10px;
+      height: 210px;
+      margin-bottom: 20px;
+    }
+    button {
+      width: 170px;
+      background-color: $main-color;
+      color: #fff;
+      border: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 16px 0;
+      display: block;
+    }
+  }
+}

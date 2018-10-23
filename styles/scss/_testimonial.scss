@@ -1,0 +1,99 @@
+.testimonial {
+  margin-top: -44px;
+  &__item {
+    width: $column * 2;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 60px;
+    @media (max-width: 400px) {
+      width: 100%;
+    }
+    &-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 80px;
+      margin-top: -35px;
+      @media (max-width: 400px) {
+        flex-flow: row wrap;
+      }
+    }
+    &-number {
+      font-size: 1.5em;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+    }
+    &-parameter {
+      font-size: .875em;
+      color: $second-color;
+    }
+  }
+  &__customer-say {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-photo {
+      width: 104px;
+      margin-bottom: 10px;
+    }
+    &-name {
+      font-size: 1.375em;
+      font-weight: bold;
+    }
+    &-from {
+      color: $second-color;
+      margin-bottom: 25px;
+    }
+    &-quote {
+      width: 480px;
+      margin-left: 75px;
+      font-size: 1.25em;
+      quotes: none;
+      text-indent: 7px;
+      text-align: center;
+      color: $second-color;
+      position: relative;
+      padding: 0 40px;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url(source/quote-left.svg);
+        width: 15px;
+        height: 15px;
+        left: -15px;
+        top: 10px;
+        font-size: 1.5em;
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url(source/quote-right.svg);
+        width: 15px;
+        height: 15px;
+        right: -15px;
+        bottom: 10px;
+        font-size: 1.5em;
+      }
+      @media (max-width: 400px) {
+        width: 250px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        // &::before {
+        //   left: -10px;
+        // }
+        // &::after {
+        //   right: -10px;
+        // }
+      }
+    }
+  }
+}

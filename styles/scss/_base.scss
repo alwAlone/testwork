@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+body {
+  margin: 0;
+}
+.section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 225px;
+
+  &__title {
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: .4em;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__description {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 0 110px;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    margin-bottom: 81.5px;
+    color: $second-color;
+    @media (max-width: 400px) {
+      padding: 0 20px;
+    }
+  }
+}
