@@ -8,18 +8,13 @@
     flex-flow: row wrap;
     justify-content: center;
     padding-top: 60px;
-    @media (max-width: 400px) {
-      width: 100%;
-    }
+
     &-box {
       width: 100%;
       display: flex;
       justify-content: center;
       margin-bottom: 80px;
       margin-top: -35px;
-      @media (max-width: 400px) {
-        flex-flow: row wrap;
-      }
     }
     &-number {
       font-size: 1.5em;
@@ -60,6 +55,7 @@
       color: $second-color;
       position: relative;
       padding: 0 40px;
+
       &::before {
         content: "";
         display: block;
@@ -82,17 +78,40 @@
         bottom: 10px;
         font-size: 1.5em;
       }
-      @media (max-width: 400px) {
+    }
+  }
+}
+@media (max-width: 900px) {
+.testimonial {
+  &__customer-say {
+    &-quote {
+      margin-left: 0;
+
+      &::before {
+        left: 0;
+      }
+      &::after {
+        right: 0;
+      } 
+    }
+  }
+}
+}
+@media (max-width: 550px) {
+  .testimonial {
+    &__item {
+      width: 100%;
+
+      &-box {
+        flex-flow: row wrap;
+      }
+    }
+    &__customer-say {
+      &-quote {
         width: 250px;
         box-sizing: border-box;
         margin: 0;
-        padding: 0;
-        // &::before {
-        //   left: -10px;
-        // }
-        // &::after {
-        //   right: -10px;
-        // }
+        padding: 10px;
       }
     }
   }
