@@ -202,6 +202,7 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 109px;
+  flex-flow: row wrap;
 }
 .main__container {
   max-width: 960px;

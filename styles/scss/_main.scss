@@ -1,11 +1,12 @@
 .main {
-  min-width: 320px;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
+  min-width: 320px;
   padding-top: 109px;
 
   &__container {
-    max-width: $column * 12;
+    max-width: 960px;
     width: 100%;
     box-sizing: border-box;
     @media (max-width: 1140px) {
